@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Project NO.1</title>
+    <link src="./favicon.ico">
+  </head>
+  <body>
+    <header> 
+        <h1>Concept Development</h1>
+        <h2>Brainstorming</h2>
+        <h2>3/24/2013</h2>
+        <nav>
+            <ol>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#attendance">Attendance</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3 id="agenda">Agenda</h3>
+            <ul>
+                <li>Finish confirming schedule from last meeting</li>
+                <li>Answer Professor's email</li>
+                <li>Decide on our concept</li>
+                <li>Create group chat</li>
+                <li>Count all numbers of pi in reverse alphabetical order without hands</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h3 id="summary">Summary</h3>
+            <p>
+                We are 3 weeks behind schedule. <br>
+                Meet with Professor <strong>this weekend</strong>. <br>
+                Will decide concept based on <a href="#footer">poll</a>. <br>
+                Jeff suggested we eat pizza at Joe Mama's Pies tonight. <br>
+                Poll due in <b>two days</b>. <br>
+                Join the slack team. <br>
+                <em>Unable to finish counting</em>.
+            </p>
+
+            <h3>Visuals and Recordings</h3>
+            <details>
+                <summary>Relevant Diagram</summary>
+                <img src="diagram.png">
+            </details>
+            <video>
+                <source src="definitelythemeeting.mp4" type="video/mp4">
+            </video>
+            <audio>
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3 id="attendance">Attendance List</h3>
+            <ul>
+                <li><strong>Coordinator</strong>: John Doe</li>
+                <li><b>Co-coordinator</b>: Mary Jane</li>
+                <li><i>Organizer</i>: Paul Bin</li>
+                <li>Jeff Dare</li>
+                <li>Sarah Hanks</li>
+                <li>Linda Brown</li>
+            </ul>
+        </section>    
+    </main>
+    <footer id="footer">
+        <form id="useless">
+            <fieldset>
+                <label>Name:</label>
+                <input type="text"> <br>
+                <label>Meeting Date:</label>
+                <input type="date" min="2013-3-17"> <br>
+                <label>Joined the Slack?</label>
+                <input type="checkbox">
+            </fieldset>
+
+            <fieldset>
+                <legend>VOTE FOR PROJECT</legend>
+                <input type="radio" name="project">
+                <label>chicken sandwich automizer</label> <br>
+
+                <input type="radio" name="project">
+                <label>Angletler</label> <br>
+
+                <input type="radio" name="project">
+                <label>Virtual Folder</label>
+            </fieldset>
+
+            <fieldset>
+                <label>Country</label>
+                <input list="countries">
+
+                <datalist id="countries">
+                    <option value="United States of America"></option>
+                    <option value="USA"></option>
+                    <option value="America"></option>
+                </datalist>
+
+                <label>Are you a protected veteran?</label>
+                <select>
+                    <option value="">--Please choose an option--</option>
+                    <option value="Yes">Dog</option>
+                    <option value="No">Cat</option>
+                </select>
+            </fieldset>
+
+            <button type="submit" form="useless" value="Submit">Submit</button>
+        </form>
+        <img src="maxresdefault.jpg" width="265" height="144">
+    </footer>
+  </body>
+</html>
