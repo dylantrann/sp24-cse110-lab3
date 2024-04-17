@@ -11,7 +11,6 @@
 
 header {
     background-color: burlywood;
-    text-align: center;
 }
 
 body {
@@ -34,6 +33,7 @@ h2 {
 h3 {
     color: color(xyz 45 20 0);
     text-decoration: underline;
+    text-align: center;
 }
 
 p {
@@ -58,24 +58,36 @@ p {
     margin-bottom: 10vh;
 }
 
+.general {
+    /* Border */
+    border-style: none;
+    border-radius: 7px;
+
+    /* Padding */
+    padding: 1cm 37.8px;
+    padding-left: 1cm;
+    padding-bottom: 37.8px;
+
+    /* Margin */
+    margin: 10vh 10vw;
+    margin-left: 10vw;
+    margin-bottom: 10vh;
+}
+
 #summary {
     border: 2px solid black;
     padding: .5em;
-    margin: auto;
-}
-
-#attendance {
     margin: auto;
     max-width: 100px;
     max-height: 100px;
 }
 
-#glossary {
+#diagram {
     position: sticky;
     display: block;
 }
 
-#diagram {
+#glossary {
     position: static;
     display: flex;
 }
