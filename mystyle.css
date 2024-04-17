@@ -24,7 +24,7 @@ body {
     background-color: var(--base-color, white); /* If --base-color is invalid for some reason, will default to white  */
 }
 
-footer{
+footer h2{
     background-color: color-mix(in srgb, #ffca7c 50%, white);
 }
 
@@ -43,8 +43,20 @@ h3 {
     text-decoration: underline;
 }
 
-p {
+h3:has(+ p) {
+    color: lightseagreen
+}
+
+h3 + p {
     color: hsl(44, 95%, 42%);
+}
+
+ul > li {
+    color: darkslategrey
+}
+
+fieldset ~ img {
+    border-width: 5px;
 }
 
 /* Used for both header and footer */
@@ -67,7 +79,7 @@ p {
 }
 
 /* Used for general body texts */
-.general {
+section.general {
     /* Border */
     border-style: none;
     border-radius: 4px;
@@ -97,6 +109,11 @@ nav {
     gap: 10px;
 }
 
+audio {
+    justify-content: center;
+    align-items: center;
+}
+
 video, 
 img {
     max-width: 100%;
@@ -107,8 +124,11 @@ summary:hover {
     color: blue
 }
 
-button:hover {
-    color: grey;
+button {
+    color: whitesmoke;
+    &:hover {
+        color: gray;
+    }
 }
 
 button:active {
