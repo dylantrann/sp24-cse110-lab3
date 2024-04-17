@@ -16,8 +16,6 @@
 
 header {
     background-color: burlywood;
-    position: sticky;
-    top: 20px;
 }
 
 body {
@@ -114,6 +112,7 @@ nav {
 }
 
 audio {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -153,5 +152,9 @@ a[href="#poll"] {
 @media (min-width: 51em) {
     #cat {
         display: none;
+    }
+    header {
+        position: sticky;
+        top: 20px;
     }
 }
