@@ -41,6 +41,7 @@ p {
     color: hsl(44, 95%, 42%);
 }
 
+/* Used for both header and footer */
 .box {
     /* Border */
     border-style: solid;
@@ -59,6 +60,7 @@ p {
     margin-bottom: 10vh;
 }
 
+/* Used for general body texts */
 .general {
     /* Border */
     border-style: none;
@@ -71,14 +73,22 @@ p {
     margin: auto
 }
 
-#diagram {
-    position: sticky;
-    display: block;
+form {
+    position: static;
+    display: grid;
+    justify-content: center;
+    align-content: space-evenly;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
 }
 
-#glossary {
-    position: static;
+nav {
+    position: sticky;
+    top: 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 video {
