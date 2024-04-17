@@ -9,12 +9,15 @@
     --base-color: lightgrey;
 }
 
+* {
+    font-family: Lato;
+}
+
 header {
     background-color: burlywood;
 }
 
 body {
-    font-family: Lato;
     background-color: var(--base-color, white); /* If --base-color is invalid for some reason, will default to white  */
 }
 
@@ -109,9 +112,16 @@ button:active {
     color: black;
 }
 
+
+a[href="#poll"] {
+    color: purple;
+}
+
 @media (min-width: 30em) and (max-width: 50em) {
     #cat {
         display: static;
+        align-content: center;
+        justify-content: center;
     }
   }
 
