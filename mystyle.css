@@ -9,16 +9,24 @@
     --base-color: lightgrey;
 }
 
+* {
+    /* Sets entire page's font to Lato */
+    font-family: Lato;
+}
+
 header {
     background-color: burlywood;
 }
 
 body {
-    font-family: Lato;
     background-color: var(--base-color, white); /* If --base-color is invalid for some reason, will default to white  */
 }
 
-footer{
+footer {
+    background-color: burlywood;
+}
+
+footer h2{
     background-color: color-mix(in srgb, #ffca7c 50%, white);
 }
 
@@ -37,8 +45,20 @@ h3 {
     text-decoration: underline;
 }
 
-p {
+h3:has(+ p) {
+    color: lightseagreen;
+}
+
+h3 + p {
     color: hsl(44, 95%, 42%);
+}
+
+ul > li {
+    color: darkslategrey;
+}
+
+fieldset ~ img {
+    border-width: 5px;
 }
 
 /* Used for both header and footer */
@@ -61,7 +81,7 @@ p {
 }
 
 /* Used for general body texts */
-.general {
+section.general {
     /* Border */
     border-style: none;
     border-radius: 4px;
@@ -75,6 +95,7 @@ p {
 
 form {
     position: static;
+    /* Makes the form into a centered */
     display: grid;
     justify-content: center;
     align-content: space-evenly;
@@ -83,12 +104,17 @@ form {
 }
 
 nav {
-    position: sticky;
-    top: 20px;
+    /* Flex container for the navigation bar */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+audio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 video, 
@@ -98,25 +124,37 @@ img {
 }
 
 summary:hover {
-    color: blue
+    color: blue;
 }
 
-button:hover {
-    color: grey;
+button {
+    &:hover {
+        color: gray;
+    }
+    &:active {
+        color: black;
+    }
 }
 
-button:active {
-    color: black;
+
+a[href="#poll"] {
+    color: purple;
 }
 
 @media (min-width: 30em) and (max-width: 50em) {
     #cat {
         display: static;
+        align-content: center;
+        justify-content: center;
     }
   }
 
 @media (min-width: 51em) {
     #cat {
         display: none;
+    }
+    header {
+        position: sticky;
+        top: 20px;
     }
 }
