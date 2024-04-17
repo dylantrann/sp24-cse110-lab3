@@ -10,9 +10,8 @@
   <body>
     <header class="box"> 
         <h1>Concept Development</h1>
-        <h2>Brainstorming</h2>
-        <h2>3/24/2013</h2>
-        <nav>
+        <h2>3/24/2013: Brainstorming</h2>
+        <nav id="glossary">
             <ol>
                 <li><a href="#agenda">Agenda</a></li>
                 <li><a href="#summary">Summary</a></li>
@@ -22,8 +21,8 @@
     </header>
 
     <main>
-        <section>
-            <h3 id="agenda">Agenda</h3>
+        <section class="general">
+            <h3>Agenda</h3>
             <ul>
                 <li>Finish confirming schedule from last meeting</li>
                 <li>Answer Professor's email</li>
@@ -33,8 +32,8 @@
             </ul>
         </section>
         
-        <section>
-            <h3 id="summary">Summary</h3>
+        <section class="general">
+            <h3>Summary</h3>
             <p>
                 We are 3 weeks behind schedule. <br>
                 Meet with Professor <strong>this weekend</strong>. <br>
@@ -44,13 +43,15 @@
                 Join the slack team. <br>
                 <em>Unable to finish counting</em>.
             </p>
+        </section>
 
+        <section class="general">
             <h3>Visuals and Recordings</h3>
-            <details>
+            <details id="diagram">
                 <summary>Relevant Diagram</summary>
                 <img src="files/diagram.png" alt="usfr" width="200" height="200">
             </details>
-            <video controls>
+            <video controls id="video">
                 <source src="files/definitelythemeeting.mp4" type="video/mp4">
             </video>
             <audio controls>
@@ -60,8 +61,8 @@
 
         <hr>
 
-        <section>
-            <h3 id="attendance">Attendance List</h3>
+        <section id="attendance" class="general">
+            <h3>Attendance List</h3>
             <ul>
                 <li><strong>Coordinator</strong>: John Doe</li>
                 <li><b>Co-coordinator</b>: Mary Jane</li>
