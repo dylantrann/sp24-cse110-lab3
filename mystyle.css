@@ -81,7 +81,19 @@ p {
     display: flex;
 }
 
-#video {
+video {
     max-width: 1000px;
     max-height: 500px;
+}
+
+summary:hover {
+    color: blue
+}
+
+button:hover {
+    color: grey;
+}
+
+button:active {
+    color: black;
 }
