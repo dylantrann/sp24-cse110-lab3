@@ -91,9 +91,10 @@ nav {
     gap: 10px;
 }
 
-video {
-    max-width: 1000px;
-    max-height: 500px;
+video, 
+img {
+    max-width: 100%;
+    max-height: auto;
 }
 
 summary:hover {
@@ -106,4 +107,16 @@ button:hover {
 
 button:active {
     color: black;
+}
+
+@media (min-width: 30em) and (max-width: 50em) {
+    #cat {
+        display: static;
+    }
+  }
+
+@media (min-width: 51em) {
+    #cat {
+        display: none;
+    }
 }
