@@ -3,6 +3,6 @@
     src: url(Lato/Lato-Black.ttf);
 }
 
-html {
+h1 {
     font-family: Lato;
 }
