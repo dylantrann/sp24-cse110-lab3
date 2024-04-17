@@ -27,7 +27,8 @@ footer {
 }
 
 footer h2{
-    background-color: color-mix(in srgb, #ffca7c 50%, white);
+    color: color-mix(in srgb, #ffca7c 50%, white);
+    background-color: #ffca7c;
 }
 
 h1 {
@@ -41,7 +42,7 @@ h2 {
 }
 
 h3 {
-    color: color(xyz 45 20 0);
+    color: color(display-p3 0 1 0);
     text-decoration: underline;
 }
 
@@ -99,8 +100,8 @@ form {
     display: grid;
     justify-content: center;
     align-content: space-evenly;
-    grid-template-columns: 1;
-    grid-template-rows: 3;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
 }
 
 nav {
@@ -120,7 +121,7 @@ audio {
 video, 
 img {
     max-width: 100%;
-    max-height: auto;
+    height: auto;
 }
 
 summary:hover {
@@ -143,7 +144,7 @@ a[href="#poll"] {
 
 @media (min-width: 30em) and (max-width: 50em) {
     #cat {
-        display: static;
+        position: static;
         align-content: center;
         justify-content: center;
     }
