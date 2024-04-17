@@ -8,11 +8,11 @@
 }
 
 header {
-    background-color: var(--base-color, white);
+    background-color: burlywood;
 }
 
 body {
-    background-color: burlywood;
+    background-color: var(--base-color, white);
 }
 
 footer{
