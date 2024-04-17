@@ -1,8 +1,29 @@
 @font-face {
     font-family: Lato;
-    src: url(Lato/Lato-Black.ttf);
+    src: url(Lato/Lato-Light.ttf);
+}
+
+header {
+    background-color: grey;
+}
+
+footer{
+    background-color: color-mix(in srgb, #00f7da 50%, white);
 }
 
 h1 {
     font-family: Lato;
+    color: #000080;
+}
+
+h2 {
+    color: rgb(4, 149, 50);
+}
+
+h3 {
+    color: color(xyz 45 20 0);
+}
+
+p {
+    color: hsl(44, 95%, 42%);
 }
