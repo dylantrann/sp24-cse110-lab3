@@ -24,6 +24,10 @@ body {
     background-color: var(--base-color, white); /* If --base-color is invalid for some reason, will default to white  */
 }
 
+footer {
+    background-color: burlywood;
+}
+
 footer h2{
     background-color: color-mix(in srgb, #ffca7c 50%, white);
 }
@@ -44,7 +48,7 @@ h3 {
 }
 
 h3:has(+ p) {
-    color: lightseagreen
+    color: lightseagreen;
 }
 
 h3 + p {
@@ -52,7 +56,7 @@ h3 + p {
 }
 
 ul > li {
-    color: darkslategrey
+    color: darkslategrey;
 }
 
 fieldset ~ img {
@@ -121,18 +125,16 @@ img {
 }
 
 summary:hover {
-    color: blue
+    color: blue;
 }
 
 button {
-    color: whitesmoke;
     &:hover {
         color: gray;
     }
-}
-
-button:active {
-    color: black;
+    &:active {
+        color: black;
+    }
 }
 
 
