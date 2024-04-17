@@ -3,12 +3,20 @@
     src: url(Lato/Lato-Light.ttf);
 }
 
+:root {
+    --base-color: lightgrey
+}
+
 header {
-    background-color: grey;
+    background-color: var(--base-color, white);
+}
+
+body {
+    background-color: burlywood;
 }
 
 footer{
-    background-color: color-mix(in srgb, #00f7da 50%, white);
+    background-color: color-mix(in srgb, #ffca7c 50%, white);
 }
 
 h1 {
