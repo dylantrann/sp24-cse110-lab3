@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    src: url(Lato/Lato-Black.ttf);
+}
+
+p {
+    font-family: Lato, sans-serif;
+}
