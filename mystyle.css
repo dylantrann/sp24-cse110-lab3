@@ -24,16 +24,17 @@ footer{
 
 h1 {
     color: #000080;
+    text-align: center;
 }
 
 h2 {
     color: rgb(4, 149, 50);
+    text-align: center;
 }
 
 h3 {
     color: color(xyz 45 20 0);
     text-decoration: underline;
-    text-align: center;
 }
 
 p {
@@ -78,8 +79,6 @@ p {
     border: 2px solid black;
     padding: .5em;
     margin: auto;
-    max-width: 100px;
-    max-height: 100px;
 }
 
 #diagram {
@@ -90,4 +89,9 @@ p {
 #glossary {
     position: static;
     display: flex;
+}
+
+#video {
+    max-width: 1000px;
+    max-height: 500px;
 }
