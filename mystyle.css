@@ -27,7 +27,7 @@ footer {
 }
 
 footer h2{
-    background-color: color-mix(#ffca7c 50%, white);
+    background-color: white
 }
 
 h1 {
@@ -41,7 +41,7 @@ h2 {
 }
 
 h3 {
-    color: color(0 1 0);
+    color: color(from green srgb r g b / 0.5);
     text-decoration: underline;
 }
 
@@ -65,7 +65,7 @@ fieldset ~ img {
 .box {
     /* Border */
     border-style: solid;
-    border-color: darkblue;
+    border-color: color-mix(in HSL, blue 50%, white);
     border-width: 2mm;
     border-radius: 7px;
 
