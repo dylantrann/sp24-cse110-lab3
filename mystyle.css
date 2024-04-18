@@ -27,8 +27,7 @@ footer {
 }
 
 footer h2{
-    color: color-mix(in srgb, #ffca7c 50%, white);
-    background-color: #ffca7c;
+    background-color: color-mix(#ffca7c 50%, white);
 }
 
 h1 {
@@ -42,7 +41,7 @@ h2 {
 }
 
 h3 {
-    color: color(display-p3 0 1 0);
+    color: color(0 1 0);
     text-decoration: underline;
 }
 
